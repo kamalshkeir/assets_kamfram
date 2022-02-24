@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow: /media/
+Disallow: /static/
+Disallow: /admin
+
+
+User-agent: *
+Disallow: /media/
+Disallow: /static/
+Disallow: /admin

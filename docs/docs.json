@@ -1,0 +1,102 @@
+{
+	"basePath": "/",
+	"definitions": {
+		"LoginRequest": {
+			"example": {
+				"email": "bla@gmail.com",
+				"password": "blabla"
+			},
+			"properties": {
+				"email": {
+					"description": "email here",
+					"required": true,
+					"type": "string"
+				},
+				"password": {
+					"description": "password goes here",
+					"format": "password",
+					"required": true,
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"externalDocs": {
+		"description": "Send me email on kamalshkeir@yahoo.fr",
+		"url": "https://kamalshkeir.github.io"
+	},
+	"host": "localhost:9313",
+	"info": {
+		"contact": {
+			"email": "kamalshkeir@yahoo.fr",
+			"url": "https://kamalshkeir.github.io"
+		},
+		"description": "KamFram docs, ready to use with internal 'docs' library",
+		"title": "KamFram Docs",
+		"version": "1.0.0"
+	},
+	"paths": {
+		"/admin/login": {
+			"get": {
+				"description": "Login HTML REQUEST",
+				"parameters": [],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				},
+				"summary": "Login HTML REQUEST",
+				"tags": [
+					"Auth"
+				]
+			},
+			"post": {
+				"consumes": [
+					"application/json"
+				],
+				"description": "login post method docs",
+				"operationId": "d0823e60-af99-4b35-b19e-1f3f36c2b8ca",
+				"parameters": [
+					{
+						"description": "login post method docs",
+						"in": "body",
+						"name": "Request body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/LoginRequest"
+						}
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				},
+				"summary": "login post method docs",
+				"tags": [
+					"Auth"
+				]
+			}
+		}
+	},
+	"schemes": [
+		"http"
+	],
+	"swagger": "2.0",
+	"tags": [
+		{
+			"description": "Authentication URLS",
+			"name": "Auth"
+		}
+	]
+}
