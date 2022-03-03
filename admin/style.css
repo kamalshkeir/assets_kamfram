@@ -557,7 +557,6 @@ form .form-group textarea::placeholder{
 
 body > div.wrapper > div.table-container > table > tbody > tr > td > p {
     max-height: 100px;
-    overflow-y: scroll;
 }
 
 
